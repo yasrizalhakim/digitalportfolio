@@ -2,7 +2,7 @@
 const projects = [
     {
         title: "IoT Energy Monitoring System",
-        description: "Comprehensive IoT system integrating web and mobile applications for real-time energy monitoring and control. Implemented real-time data visualization and remote-control capabilities.",
+        description: "Built a comprehensive IoT system integrating mobile and web apps for real-time energy tracking and control. Implemented live dashboards and remote control features using React.js, Firebase, and Arduino. The project secured 2nd Place at the UTeM Workshop 2 Competition 2023.",
         image: "source/projectpics/workshop2.jpg",
         category: "University Project",
         tags: ["React.js", "Firebase", "Arduino", "IoT", "Real-time"],
@@ -11,7 +11,7 @@ const projects = [
     },
     {
         title: "IoT Gas & Fire Detection System",
-        description: "IoT-based safety system to detect gas, fire, and temperature with comprehensive circuit design and programming solution for real-time hazard detection.",
+        description: "Developed an IoT-based safety system to detect gas, fire, and temperature hazards. Designed and programmed circuits with Arduino IDE, Proteus, and Multisim for real-time monitoring. The project earned a Bronze Medal at the INOTEK Competition 2022.",
         image: "source/projectpics/iotgasnfire.jpg",
         category: "University Project",
         tags: ["Arduino IDE", "Proteus", "Multisim", "IoT", "Safety Systems"],
@@ -20,7 +20,7 @@ const projects = [
     },
     {
         title: "NRC Robotics Competition Project",
-        description: "Advanced robotics project representing SMK Seri Hartamas in national inter-school competition, demonstrating technical skills in programming and mechanical design.",
+        description: "Represented SMK Seri Hartamas in the Interschools Robotics Competition by designing and programming an advanced robotics system. Applied C programming and mechanical design skills to create a competitive solution",
         image: "source/projectpics/NRC.jpg",
         category: "Competition Project",
         tags: ["Arduino", "C Programming", "Robotics", "Mechanical Design", "Competition"],
@@ -29,7 +29,7 @@ const projects = [
     },
     {
         title: "Mobile IoT Application",
-        description: "Mobile application component of the energy monitoring system for remote control and real-time monitoring capabilities.",
+        description: "Created the mobile app component of the IoT energy monitoring system for real-time control and data tracking. Used Firebase for cloud integration, enabling seamless user access to IoT devices anytime, anywhere.",
         image: "source/projectpics/mobileiot.jpg",
         category: "Mobile Development",
         tags: ["Android Development", "Firebase", "Real-time", "IoT Integration"],
@@ -37,7 +37,7 @@ const projects = [
     },
     {
         title: "Circuit Design & Simulation",
-        description: "Comprehensive circuit design and simulation work using industry-standard tools for IoT and safety systems.",
+        description: "Designed and simulated IoT and safety-related electronic circuits using Proteus and Multisim. Ensured system reliability through iterative testing and validation, supporting larger IoT and safety projects.",
         image: "source/projectpics/circuitdesign.jpg",
         category: "Hardware Design",
         tags: ["Proteus", "Multisim", "Circuit Design", "Arduino", "Electronics"],
@@ -45,7 +45,7 @@ const projects = [
     },
     {
         title: "Real-time Data Dashboard",
-        description: "Web-based dashboard for visualizing IoT sensor data with real-time updates and control capabilities using modern web technologies.",
+        description: "Developed a responsive web dashboard to visualize IoT sensor data in real time. Implemented React.js with Firebase Realtime Database for instant updates and device control, improving usability and monitoring efficiency.",
         image: "source/projectpics/web.png",
         category: "Web Development",
         tags: ["React.js", "Firebase", "Real-time Database", "Data Visualization"],
@@ -181,3 +181,4 @@ document.addEventListener('DOMContentLoaded', () => {
     
     console.log('Portfolio website loaded successfully!');
 });
+
