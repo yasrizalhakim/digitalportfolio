@@ -1,55 +1,55 @@
 // Projects data
 const projects = [
     {
-        title: "IoT Gas, Fire & Temperature Detection System",
-        description: "Award-winning IoT safety monitoring system with real-time alerts and data visualization",
-        image: "https://via.placeholder.com/400x300/2563eb/ffffff?text=IoT+Detection+System",
-        category: "IoT Project",
-        tags: ["Arduino", "ESP32", "Firebase", "MQTT", "Sensors"],
+        title: "IoT Energy Monitoring System",
+        description: "Comprehensive IoT system integrating web and mobile applications for real-time energy monitoring and control. Implemented real-time data visualization and remote-control capabilities.",
+        image: "source/projectpics/workshop2.jpg",
+        category: "University Project",
+        tags: ["React.js", "Firebase", "Arduino", "IoT", "Real-time"],
         type: "iot",
-        award: "INOTEK Competition 2022 - Bronze Award"
+        award: "2nd Place - UTeM Workshop 2 Competition 2023"
     },
     {
-        title: "IoT Energy Monitoring & Control System",
-        description: "Smart energy management solution for monitoring and controlling power consumption",
-        image: "https://via.placeholder.com/400x300/10b981/ffffff?text=Energy+Monitoring",
-        category: "IoT Project",
-        tags: ["ESP32", "React.js", "Firebase", "REST API", "Energy Monitoring"],
+        title: "IoT Gas & Fire Detection System",
+        description: "IoT-based safety system to detect gas, fire, and temperature with comprehensive circuit design and programming solution for real-time hazard detection.",
+        image: "source/projectpics/iotgasnfire.jpg",
+        category: "University Project",
+        tags: ["Arduino IDE", "Proteus", "Multisim", "IoT", "Safety Systems"],
         type: "iot",
-        award: "UTeM Workshop 2 Competition 2023 - 2nd Place"
+        award: "Bronze Medal - INOTEK Competition 2022"
     },
     {
-        title: "Robotics Competition Projects",
-        description: "Various robotics projects developed during NRC competition participation (2017-2019)",
-        image: "https://via.placeholder.com/400x300/f59e0b/ffffff?text=Robotics+Projects",
-        category: "Robotics",
-        tags: ["Arduino", "C", "Sensors", "Motor Control", "Competition"],
+        title: "NRC Robotics Competition Project",
+        description: "Advanced robotics project representing SMK Seri Hartamas in national inter-school competition, demonstrating technical skills in programming and mechanical design.",
+        image: "source/projectpics/NRC.jpg",
+        category: "Competition Project",
+        tags: ["Arduino", "C Programming", "Robotics", "Mechanical Design", "Competition"],
         type: "robotics",
-        award: "NRC Competition Participant"
+        award: "NRC Inter-school Competition Representative 2018"
     },
     {
-        title: "Android IoT Controller App",
-        description: "Mobile application for controlling and monitoring IoT devices remotely",
-        image: "https://via.placeholder.com/400x300/8b5cf6/ffffff?text=Android+App",
+        title: "Mobile IoT Application",
+        description: "Mobile application component of the energy monitoring system for remote control and real-time monitoring capabilities.",
+        image: "source/projectpics/mobileiot.jpg",
         category: "Mobile Development",
-        tags: ["Android", "Java", "Firebase", "MQTT", "Real-time"],
+        tags: ["Android Development", "Firebase", "Real-time", "IoT Integration"],
         type: "mobile"
     },
     {
-        title: "Firebase Real-time Dashboard",
-        description: "Web dashboard for visualizing IoT sensor data with real-time updates",
-        image: "https://via.placeholder.com/400x300/ef4444/ffffff?text=Dashboard",
-        category: "Web Development",
-        tags: ["React.js", "Firebase", "JavaScript", "Real-time DB", "Charts"],
-        type: "web"
+        title: "Circuit Design & Simulation",
+        description: "Comprehensive circuit design and simulation work using industry-standard tools for IoT and safety systems.",
+        image: "source/projectpics/circuitdesign.jpg",
+        category: "Hardware Design",
+        tags: ["Proteus", "Multisim", "Circuit Design", "Arduino", "Electronics"],
+        type: "hardware"
     },
     {
-        title: "Circuit Design & Prototyping",
-        description: "Custom circuit designs and prototypes for various IoT applications",
-        image: "https://via.placeholder.com/400x300/06b6d4/ffffff?text=Circuit+Design",
-        category: "Hardware",
-        tags: ["Circuit Design", "Soldering", "Arduino", "ESP32", "Prototyping"],
-        type: "hardware"
+        title: "Real-time Data Dashboard",
+        description: "Web-based dashboard for visualizing IoT sensor data with real-time updates and control capabilities using modern web technologies.",
+        image: "source/projectpics/web.png",
+        category: "Web Development",
+        tags: ["React.js", "Firebase", "Real-time Database", "Data Visualization"],
+        type: "web"
     }
 ];
 
