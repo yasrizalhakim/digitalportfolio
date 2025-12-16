@@ -1,3 +1,6 @@
+/* ============================================
+   CONTACT PAGE STYLES
+   ============================================ */
 
 /* Contact Section */
 .contact-section {
@@ -207,6 +210,102 @@
   margin-bottom: var(--spacing-2xl);
 }
 
+/* Contact Options */
+.contact-options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.contact-option-card {
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  text-align: center;
+  transition: all var(--transition-base);
+}
+
+.contact-option-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-accent);
+}
+
+.option-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.email-icon {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+}
+
+.whatsapp-icon {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+}
+
+.phone-icon {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.contact-option-card h3 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-primary);
+}
+
+.contact-option-card p {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.option-note {
+  display: block;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-light);
+  margin-top: var(--spacing-sm);
+  font-style: italic;
+}
+
+/* Response Info */
+.response-info {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  background: var(--color-bg-tertiary);
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--color-accent);
+}
+
+.response-info svg {
+  flex-shrink: 0;
+  color: var(--color-accent);
+  margin-top: 2px;
+}
+
+.response-info strong {
+  display: block;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xs);
+  font-size: var(--font-size-base);
+}
+
+.response-info p {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+
 /* Form Styles */
 .contact-form {
   display: flex;
@@ -309,10 +408,61 @@ textarea.form-input {
   margin: 0;
 }
 
+/* Quick Contact Section */
+.quick-contact-section {
+  padding: var(--spacing-4xl) 0;
+  background: var(--color-bg-primary);
+}
+
+.quick-contact-card {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  color: white;
+  padding: var(--spacing-4xl) var(--spacing-3xl);
+  border-radius: var(--radius-2xl);
+  text-align: center;
+}
+
+.quick-contact-card h2 {
+  font-size: var(--font-size-4xl);
+  color: white;
+  margin-bottom: var(--spacing-lg);
+}
+
+.quick-contact-card p {
+  font-size: var(--font-size-lg);
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.quick-contact-buttons {
+  display: flex;
+  gap: var(--spacing-lg);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.quick-contact-card .btn-primary {
+  background: white;
+  color: var(--color-primary);
+}
+
+.quick-contact-card .btn-primary:hover {
+  background: var(--color-bg-tertiary);
+}
+
+.quick-contact-card .btn-outline {
+  border-color: white;
+  color: white;
+}
+
+.quick-contact-card .btn-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 /* FAQ Section */
 .faq-section {
   padding: var(--spacing-4xl) 0;
-  background: var(--color-bg-primary);
+  background: var(--color-bg-secondary);
 }
 
 .faq-grid {
