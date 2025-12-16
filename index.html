@@ -3,332 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yasrizal Hakim - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Yasrizal Hakim - Digital Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="nav">
+    <!-- Navigation Component -->
+    <nav class="nav" id="mainNav">
         <div class="nav-container">
             <div class="nav-logo">Yasrizal Hakim</div>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#skills">Skills</a>
-                <a href="#education">Education</a>
-                <a href="#contact">Contact</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="pages/about.html" class="nav-link">About Me</a>
+                <a href="pages/portfolio.html" class="nav-link">Portfolio</a>
+                <a href="pages/skills.html" class="nav-link">Skills</a>
+                <a href="pages/education.html" class="nav-link">Education</a>
+                <a href="pages/contact.html" class="nav-link">Contact</a>
             </div>
-            <a href="source/yasrizalhakim_ATSresume2025.pdf" download="YasrizalHakimResume2025" class="btn btn-primary btn-sm">My ATS Resume</a>
+            <a href="source/yasrizalhakim_ATSresume2025.pdf" download="YasrizalHakimResume2025" class="btn btn-primary btn-sm">Resume</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-background">
+            <div class="hero-pattern"></div>
+        </div>
         <div class="container">
-            <img src="source/ProfPicture.png" alt="Yasrizal Hakim" class="hero-image">
-            <h1 class="hero-title">Computer Science Student</span></h1>
-            <p class="hero-description">
-                Final year Computer Science student at UTeM majoring in Software Development with CGPA 3.52/4.0. 
-                Experienced in IoT systems, mobile application development, and award-winning project implementations. 
-                Proven track record in technical competitions and achievements.
-            </p>
-            <div class="hero-buttons">
-                <a href="#portfolio" class="btn btn-primary btn-lg">
-                    View My Work
-                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                    </svg>
-                </a>
-                <a href="#contact" class="btn btn-outline btn-lg">
-                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                    </svg>
-                    Get In Touch
-                </a>
-            </div>
-            <div class="hero-info">
-                <div class="info-item">
-                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                    </svg>
-                    Seri Hartamas, Kuala Lumpur
+            <div class="hero-content">
+                <div class="hero-image-container">
+                    <img src="source/ProfPicture.png" alt="Yasrizal Hakim" class="hero-image">
+                    <div class="hero-image-ring"></div>
                 </div>
-                <div class="info-item">
-                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                    </svg>
-                    +60 192268045
+                <h1 class="hero-title">
+                    <span class="hero-greeting">Hello, I'm</span>
+                    <span class="hero-name">Yasrizal Hakim</span>
+                </h1>
+                <p class="hero-subtitle">Computer Science Student | IoT Enthusiast | Software Developer</p>
+                <p class="hero-description">
+                    Final year Computer Science student at UTeM specializing in Software Development with CGPA 3.52/4.0. 
+                    Passionate about creating innovative IoT solutions and mobile applications that make a real-world impact.
+                </p>
+                <div class="hero-buttons">
+                    <a href="pages/portfolio.html" class="btn btn-primary btn-lg">
+                        View My Work
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="pages/contact.html" class="btn btn-outline btn-lg">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        Get In Touch
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">3.52</div>
+                        <div class="stat-label">CGPA</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">6+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">Awards</div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="scroll-indicator">
+            <div class="scroll-icon"></div>
+            <span>Scroll to explore</span>
+        </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
+    <!-- Quick Overview Section -->
+    <section class="quick-overview">
         <div class="container">
-            <div class="section-header">
-                <h2>About Me</h2>
-                <p>I am a passionate Computer Science student specializing in software engineering, IoT systems, and mobile application development. I enjoy building practical solutions that combine technology and creativity, with recent projects focusing on smart automation and energy optimization. 
-                    Beyond academics, I am fluent in English (MUET Band 4) and Malay, which helps me collaborate effectively in diverse teams.</p>
-            </div>
-            <div class="grid">
-                <div class="card">
+            <div class="overview-grid">
+                <div class="overview-card" data-aos="fade-up">
                     <div class="card-icon">
-                        <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: #2563eb; margin-bottom: 1rem;">
+                        <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
                         </svg>
                     </div>
                     <h3>Software Development</h3>
-                    <p>Proficient in Java, JavaScript, Python, and modern frameworks like React.js and Android development.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: #2563eb; margin-bottom: 1rem;">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"/>
-                        </svg>
-                    </div>
-                    <h3>IoT & Hardware</h3>
-                    <p>Specialized in Arduino, ESP32, and circuit soldering for innovative IoT solutions.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: #2563eb; margin-bottom: 1rem;">
+                    <p>Expertise in Java, JavaScript, Python, and modern frameworks for building robust applications.</p>
+                    <a href="pages/skills.html" class="card-link">
+                        Learn more
+                        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                         </svg>
+                    </a>
+                </div>
+                <div class="overview-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
                     </div>
-                    <h3>Problem Solving</h3>
-                    <p>Strong debugging and troubleshooting skills proven through competition wins and internship achievements.</p>
+                    <h3>IoT Solutions</h3>
+                    <p>Award-winning IoT systems combining hardware and software for real-world problems.</p>
+                    <a href="pages/portfolio.html" class="card-link">
+                        View projects
+                        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="overview-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <p>Creating intuitive mobile applications with seamless user experiences.</p>
+                    <a href="pages/portfolio.html" class="card-link">
+                        Explore apps
+                        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="section section-white">
+    <!-- Featured Work Section -->
+    <section class="featured-work">
         <div class="container">
             <div class="section-header">
-                <h2>My Projects</h2>
-                <p>A showcase of my technical projects and achievements</p>
+                <span class="section-tag">Portfolio Highlights</span>
+                <h2>Featured Projects</h2>
+                <p>A selection of my most impactful work in IoT systems and software development</p>
             </div>
-            
-            <!-- Filter Buttons -->
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="iot">IoT Systems</button>
-                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
-                <button class="filter-btn" data-filter="web">Web Dev</button>
-                <button class="filter-btn" data-filter="robotics">Robotics</button>
-                <button class="filter-btn" data-filter="hardware">Hardware</button>
-            </div>
-
-            <!-- Projects Grid -->
-            <div class="projects-grid" id="projectsGrid">
-                <!-- Projects will be populated by JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Technical Skills</h2>
-                <p>A comprehensive overview of my technical expertise and proficiencies</p>
-            </div>
-            <div class="grid">
-                <div class="card">
-                    <h3>Programming Languages</h3>
-                    <div class="tags">
-                        <span class="tag">Java</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">Python</span>
-                        <span class="tag">C</span>
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3>Frameworks & Tools</h3>
-                    <div class="tags">
-                        <span class="tag">React.js</span>
-                        <span class="tag">Android Development</span>
-                        <span class="tag">Arduino Programming</span>
-                        <span class="tag">ESP32</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3>Development Tools</h3>
-                    <div class="tags">
-                        <span class="tag">Firebase</span>
-                        <span class="tag">Android Studio</span>
-                        <span class="tag">Arduino IDE</span>
-                        <span class="tag">Proteus</span>
-                        <span class="tag">Multisim</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3>Database & APIs</h3>
-                    <div class="tags">
-                        <span class="tag">Firestore</span>
-                        <span class="tag">Realtime Database</span>
-                        <span class="tag">Firebase Auth</span>
-                        <span class="tag">REST API</span>
-                        <span class="tag">Capacitor</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3>Achievements</h3>
-                    <div class="tags">
-                        <span class="tag">Bronze Medal - INOTEK 2022</span>
-                        <span class="tag">2nd Place - UTeM Workshop 2023</span>
-                        <span class="tag">NRC Competition Rep 2018</span>
-                        <span class="tag">MUET Band 4</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education & Experience Section -->
-    <section id="education" class="section section-white">
-        <div class="container">
-            <div class="section-header">
-                <h2>Education & Experience</h2>
-                <p>My academic journey and professional experience in software development and IoT</p>
-            </div>
-            
-            <!-- Education -->
-            <div class="timeline-section">
-                <h3>
-                    <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: #2563eb;">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/>
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
-                    </svg>
-                    Education
-                </h3>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h4>Bachelor of Computer Science (Software Development)</h4>
-                            <p class="institution">Universiti Teknikal Malaysia Melaka (UTeM)</p>
-                            <p class="period">Expected 2025</p>
-                            <span class="status current">Current</span>
-                            <p class="cgpa">CGPA: 3.52/4.0</p>
-                            <div class="tags">
-                                <span class="tag">Software Engineering</span>
-                                <span class="tag">Data Structures</span>
-                                <span class="tag">Algorithms</span>
-                                <span class="tag">Mobile App Development</span>
-                                <span class="tag">IoT Systems</span>
-                            </div>
+            <div class="featured-grid">
+                <div class="featured-card featured-large" data-aos="fade-right">
+                    <div class="featured-image">
+                        <img src="source/projectpics/workshop2.jpg" alt="IoT Energy Monitoring System">
+                        <div class="featured-overlay">
+                            <span class="award-badge">🏆 2nd Place Award</span>
                         </div>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h4>Diploma in Computer and Electronic Engineering</h4>
-                            <p class="institution">Universiti Teknikal Malaysia Melaka (UTeM)</p>
-                            <p class="period">Jun 2019 - Jun 2023</p>
-                            <span class="status completed">Completed</span>
-                            <p class="cgpa">CGPA: 3.54/4.0</p>
-                            <div class="tags">
-                                <span class="tag">Computer Engineering</span>
-                                <span class="tag">Electronic Engineering</span>
-                                <span class="tag">Programming Fundamentals</span>
-                            </div>
+                    <div class="featured-content">
+                        <h3>IoT Energy Monitoring System</h3>
+                        <p>Comprehensive real-time energy tracking system with mobile and web dashboards</p>
+                        <div class="featured-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Html/CSS</span>
+                            <span class="tag">Capacitor</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Arduino</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-card" data-aos="fade-left">
+                    <div class="featured-image">
+                        <img src="source/projectpics/iotgasnfire.jpg" alt="Gas & Fire Detection System">
+                        <div class="featured-overlay">
+                            <span class="award-badge">🥉 Bronze Medal</span>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <h3>IoT Safety Detection</h3>
+                        <p>Real-time gas, fire, and temperature monitoring system</p>
+                        <div class="featured-tags">
+                            <span class="tag">Arduino</span>
+                            <span class="tag">IoT</span>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Experience -->
-            <div class="timeline-section">
-                <h3>
-                    <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: #2563eb;">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m8 0H8m8 0v2a2 2 0 01-2 2H10a2 2 0 01-2-2V8m8 0V6a2 2 0 00-2-2H10a2 2 0 00-2 2v2"/>
-                    </svg>
-                    Experience
-                </h3>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h4>Testing Engineer Intern</h4>
-                            <p class="institution">Inari Amerton Plant 13</p>
-                            <p class="period">2022 - 2023 • Melaka, Malaysia</p>
-                            <span class="status internship">Internship</span>
-                            <ul class="achievements">
-                                <li>Conducted daily testing, calibration, and basic maintenance on manufacturing machines to ensure 100% operational efficiency</li>
-                                <li>Collaborated with engineering team to troubleshoot technical issues, improving overall production efficiency by identifying and resolving equipment malfunctions</li>
-                                <li>Developed systematic testing procedures that reduced machine downtime and enhanced quality control processes</li>
-                            </ul>
-                            <div class="tags">
-                                <span class="tag">Testing</span>
-                                <span class="tag">Calibration</span>
-                                <span class="tag">Troubleshooting</span>
-                                <span class="tag">Manufacturing</span>
-                                <span class="tag">Quality Control</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h4>Senior Assistant, Robotics Club</h4>
-                            <p class="institution">SMK Seri Hartamas</p>
-                            <p class="period">2017 - 2019 • Kuala Lumpur, Malaysia</p>
-                            <span class="status leadership">Leadership Role</span>
-                            <ul class="achievements">
-                                <li>Organized and managed weekly club sessions for 30+ students by coordinating electronic components inventory and supporting student project teams</li>
-                                <li>Represented school in 2018 NRC inter-school robotics competition, demonstrating leadership and technical problem-solving skills</li>
-                                <li>Mentored junior students in electronics fundamentals and programming concepts</li>
-                            </ul>
-                            <div class="tags">
-                                <span class="tag">Leadership</span>
-                                <span class="tag">Team Management</span>
-                                <span class="tag">Robotics</span>
-                                <span class="tag">Mentoring</span>
-                                <span class="tag">Competition</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container text-center">
-            <h2>Let's Work Together</h2>
-            <p class="contact-description">
-                I'm actively seeking opportunities to contribute to innovative projects and grow with forward-thinking teams. 
-                Located in Seri Hartamas, Kuala Lumpur. Available for internships, full-time positions, and project collaborations.
-            </p>
-            <div class="contact-buttons">
-                <a href="mailto:yasrizalhakim@gmail.com" class="btn btn-primary btn-lg">
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="pages/portfolio.html" class="btn btn-primary btn-lg">
+                    View All Projects
                     <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                     </svg>
-                    Email Me
                 </a>
-                <a href="https://linkedin.com/in/yasrizalhakim" class="btn btn-outline btn-lg">
-                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                    </svg>
-                    LinkedIn
-                </a>
-                <a href="https://github.com/yasrizalhakim" class="btn btn-outline btn-lg">
-                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                    </svg>
-                    GitHub
-                </a>
-            </div>
-            <div class="footer">
-                <p>© 2025 Yasrizal Hakim.</p>
             </div>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Yasrizal Hakim</h4>
+                    <p>Computer Science Student passionate about creating innovative solutions through technology.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="pages/about.html">About Me</a></li>
+                        <li><a href="pages/portfolio.html">Portfolio</a></li>
+                        <li><a href="pages/skills.html">Skills</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="mailto:yasrizalhakim@gmail.com" aria-label="Email">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/yasrizalhakim" aria-label="LinkedIn">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/yasrizalhakim" aria-label="GitHub">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Yasrizal Hakim. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 </html>
