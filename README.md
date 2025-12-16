@@ -1,2 +1,2 @@
 My Digital Portfolio
-yasrizalhakim.github.io/digitalportfolio
+https://yasrizalhakim.github.io/digitalportfolio
