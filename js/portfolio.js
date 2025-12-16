@@ -129,7 +129,7 @@ const projects = [
         id: 6,
         title: "Real-time Data Dashboard",
         description: "Developed a responsive web dashboard to visualize IoT sensor data in real time. Implemented JavaScript with Firebase Realtime Database for instant updates and device control, improving usability and monitoring efficiency.",
-        fullDescription: "A comprehensive web-based dashboard for monitoring and controlling IoT devices. The dashboard provides real-time data visualization through interactive charts, device status indicators, and control panels. Built with React.js for a responsive and dynamic user interface, it integrates seamlessly with Firebase for real-time data synchronization across all connected devices.",
+        fullDescription: "A comprehensive web-based dashboard for monitoring and controlling IoT devices. The dashboard provides real-time data visualization through interactive charts, device status indicators, and control panels. Built with JavaScript.js for a responsive and dynamic user interface, it integrates seamlessly with Firebase for real-time data synchronization across all connected devices.",
         image: "../source/projectpics/web.png",
         category: "Web Development",
         tags: ["JavaScript", "Firebase", "Real-time Database", "Data Visualization"],
@@ -142,7 +142,7 @@ const projects = [
             "User dashboard customization"
         ],
         technologies: [
-            "React.js framework",
+            "JavaScript.js framework",
             "Firebase Realtime Database",
             "Chart.js/Recharts",
             "Material-UI components",
