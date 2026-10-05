@@ -42,7 +42,12 @@ class AnimationController {
     if (counters.length === 0) return;
 
     const animateCounter = (counter) => {
-      const target = parseFloat(counter.textContent);
+      const text = counter.textContent.trim();
+      const target = parseFloat(text);
+      if (isNaN(target)) return;
+      // Keep any trailing suffix such as "+" from the original text
+      const suffix = text.replace(/^[\d.]+/, '');
+      const decimals = (text.split('.')[1] || '').replace(/\D.*$/, '').length;
       const duration = 2000; // 2 seconds
       const increment = target / (duration / 16); // 60fps
       let current = 0;
@@ -52,15 +57,12 @@ class AnimationController {
         
         if (current < target) {
           // Handle decimal numbers
-          if (target % 1 !== 0) {
-            counter.textContent = current.toFixed(2);
-          } else {
-            counter.textContent = Math.floor(current);
-          }
+          const value = decimals ? current.toFixed(decimals) : Math.floor(current);
+          counter.textContent = value + suffix;
           requestAnimationFrame(updateCounter);
         } else {
           // Ensure final value is exact
-          counter.textContent = target % 1 !== 0 ? target.toFixed(2) : target;
+          counter.textContent = text;
         }
       };
 

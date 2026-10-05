@@ -310,6 +310,30 @@ a:hover {
   white-space: nowrap;
 }
 
+/* Project Visual Placeholder (for projects without a photo) */
+.project-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent-dark) 100%);
+  transition: transform var(--transition-slow);
+}
+
+.project-visual-devops {
+  background: linear-gradient(135deg, #0f172a 0%, #0369a1 100%);
+}
+
+.project-visual-mobile {
+  background: linear-gradient(135deg, #14532d 0%, #ca8a04 100%);
+}
+
+.project-visual-iot {
+  background: linear-gradient(135deg, #1e1b4b 0%, #7c3aed 100%);
+}
+
 /* Grid Layouts */
 .grid {
   display: grid;
