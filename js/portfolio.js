@@ -79,14 +79,14 @@ const projects = [
     {
         id: 1,
         title: "IoT Energy Monitoring System",
-        year: "2023",
-        description: "Built a comprehensive IoT system integrating mobile and web apps for real-time energy tracking and control. Implemented live dashboards and remote control features using Capacitor, JavaScript, HTML/CSS, Firebase, and Arduino. The project secured 2nd Place at the UTeM Workshop 2 Competition 2023.",
+        year: "2025",
+        description: "Built a comprehensive IoT system integrating mobile and web apps for real-time energy tracking and control. Implemented live dashboards and remote control features using Capacitor, JavaScript, HTML/CSS, Firebase, and Arduino. The project secured 2nd Place at the UTeM Workshop 2 Competition 2025.",
         fullDescription: "This comprehensive IoT system was developed to address energy consumption challenges by providing real-time monitoring and control capabilities. The system integrates hardware sensors with Arduino/ESP32, a mobile application for on-the-go access, and a web dashboard for detailed analytics. Users can monitor energy usage patterns, receive alerts for anomalies, and remotely control connected devices. The project demonstrates full-stack development skills, from embedded systems programming to cloud-based data management.",
         image: "../source/projectpics/workshop2.jpg",
         category: "University Project",
         tags: ["JavaScript", "HTML/CSS", "Capacitor", "Firebase", "Arduino", "IoT", "Real-time"],
         type: "iot",
-        award: "2nd Place - UTeM Workshop 2 Competition 2023",
+        award: "2nd Place - UTeM Workshop 2 Competition 2025",
         features: [
             "Real-time energy consumption monitoring",
             "Remote device control via mobile and web",
@@ -99,7 +99,6 @@ const projects = [
             "Capacitor for the Android mobile app",
             "Firebase Realtime Database",
             "Arduino/ESP32 for sensors",
-            "Node.js backend",
             "Chart.js for visualization"
         ]
     },
@@ -158,12 +157,12 @@ const projects = [
     {
         id: 4,
         title: "Mobile IoT Application",
-        year: "2023",
+        year: "2025",
         description: "Created the mobile app component of the IoT energy monitoring system for real-time control and data tracking. Used Firebase for cloud integration, enabling seamless user access to IoT devices anytime, anywhere.",
-        fullDescription: "A cross-platform mobile application developed to provide users with remote access to their IoT devices. The app features real-time data visualization, device control, historical data analysis, and push notifications. Built with modern mobile development practices, it ensures smooth performance and intuitive user experience across both Android and iOS platforms.",
+        fullDescription: "A mobile application developed to give users remote access to their IoT devices. The app features real-time data visualization, device control, historical data analysis, and push notifications. It was built with web technologies and packaged as an Android app using Capacitor, sharing its Firebase backend with the web dashboard.",
         image: "../source/projectpics/mobileiot.jpg",
         category: "Mobile Development",
-        tags: ["Android Development", "Firebase", "Real-time", "IoT Integration"],
+        tags: ["Capacitor", "Android", "Firebase", "Real-time", "IoT Integration"],
         type: "mobile",
         features: [
             "Real-time device monitoring",
@@ -173,11 +172,10 @@ const projects = [
             "User authentication and profiles"
         ],
         technologies: [
+            "Capacitor (JavaScript, HTML/CSS)",
             "Android Studio",
-            "Java/Kotlin",
             "Firebase Authentication",
-            "Firebase Realtime Database",
-            "MPAndroidChart library"
+            "Firebase Realtime Database"
         ]
     },
     {
@@ -207,7 +205,7 @@ const projects = [
     {
         id: 6,
         title: "Real-time Data Dashboard",
-        year: "2023",
+        year: "2025",
         description: "Developed a responsive web dashboard to visualize IoT sensor data in real time. Implemented JavaScript with Firebase Realtime Database for instant updates and device control, improving usability and monitoring efficiency.",
         fullDescription: "A comprehensive web-based dashboard for monitoring and controlling IoT devices. The dashboard provides real-time data visualization through interactive charts, device status indicators, and control panels. Built with JavaScript, HTML, and CSS for a responsive and dynamic user interface, it integrates seamlessly with Firebase for real-time data synchronization across all connected devices.",
         image: "../source/projectpics/web.png",
