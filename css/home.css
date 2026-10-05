@@ -285,6 +285,18 @@
   grid-row: span 2;
 }
 
+/* Let the large card's photo fill the height of the two stacked cards beside it */
+@media (min-width: 768px) {
+  .featured-large {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .featured-large .featured-image {
+    flex: 1 0 400px;
+  }
+}
+
 .featured-image {
   position: relative;
   width: 100%;
