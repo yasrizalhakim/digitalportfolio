@@ -112,6 +112,11 @@
   width: 60%;
 }
 
+/* Resume download link, shown only in the mobile menu */
+.nav-download {
+  display: none;
+}
+
 /* Desktop Navigation */
 @media (min-width: 1024px) {
   .nav-toggle {
@@ -176,6 +181,21 @@
   .nav-link.active {
     background: var(--color-bg-tertiary);
     border-radius: var(--radius-md);
+  }
+
+  .nav-links .nav-download {
+    display: block;
+    margin-top: var(--spacing-md);
+    background: var(--color-primary);
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    border-radius: var(--radius-md);
+  }
+
+  .nav-links .nav-download:hover {
+    color: white;
+    background: var(--color-primary-light);
   }
 
   /* Keep the Resume button visible, between the logo and the menu toggle */
