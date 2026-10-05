@@ -26,7 +26,7 @@ class Navigation {
     // Close menu when clicking on a link
     this.navLinkItems.forEach(link => {
       link.addEventListener('click', () => {
-        if (window.innerWidth < 768) {
+        if (window.innerWidth < 1024) {
           this.closeMenu();
         }
       });
@@ -34,7 +34,7 @@ class Navigation {
 
     // Close menu when clicking outside
     document.addEventListener('click', (e) => {
-      if (window.innerWidth < 768) {
+      if (window.innerWidth < 1024) {
         if (!this.nav.contains(e.target)) {
           this.closeMenu();
         }

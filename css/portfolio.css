@@ -105,6 +105,11 @@
   transform: scale(1);
 }
 
+.project-card:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
 .project-card.hidden {
   display: none;
 }
